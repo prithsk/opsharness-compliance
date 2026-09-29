@@ -1,0 +1,20 @@
+{
+  "notes": "Swap the sim server for real ones: the communications archive, the order management system and the case tracker. Keep this project read-mostly.",
+  "servers": {
+    "sim": {
+      "command": "python3",
+      "args": [
+        "-m",
+        "opsharness.mcp_serve",
+        "--env",
+        "compliance",
+        "--seed",
+        "0"
+      ]
+    }
+  },
+  "approve": {
+    "always": [],
+    "never": []
+  }
+}
